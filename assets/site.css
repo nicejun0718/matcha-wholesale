@@ -64,12 +64,13 @@ html:lang(ko) .eyebrow { letter-spacing: .02em; }
 
 /* ---- Hero: full-width field photo, statement on the left ---- */
 .hero { position: relative; display: grid; align-items: center; min-height: 560px; color: #fff; background: #2f5a0e; overflow: hidden; }
-.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(38, 74, 10, .92) 0%, rgba(38, 74, 10, .7) 42%, rgba(38, 74, 10, 0) 72%); }
+.hero > img, .hero > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+@media (prefers-reduced-motion: reduce) { .hero > video { display: none; } }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(38, 74, 10, .86) 0%, rgba(38, 74, 10, .55) 36%, rgba(38, 74, 10, 0) 62%); }
 .hero-text { position: relative; z-index: 1; display: grid; gap: 18px; padding-block: 56px; }
-.hero h1 { font-size: clamp(2.5rem, 6vw, 4.8rem); line-height: 1.08; max-width: 12em; }
+.hero h1 { font-size: clamp(2.5rem, 5.4vw, 4.4rem); line-height: 1.08; max-width: 9em; text-shadow: 0 1px 12px rgba(20, 40, 5, .45); }
 .hero .origin { color: var(--leaf-bright); font-weight: 600; font-size: 1.05rem; margin: 0; letter-spacing: .04em; }
-.hero p.lede { margin: 0; color: #fff; max-width: 34em; }
+.hero p.lede { margin: 0; color: #fff; max-width: 30em; text-shadow: 0 1px 8px rgba(20, 40, 5, .5); }
 .hero .actions a { color: inherit; }
 .hero .btn-ghost { background: transparent; }
 
@@ -223,7 +224,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 @media (max-width: 860px) {
   body { font-size: 16px; }
   .hero { min-height: 480px; }
-  .hero::after { background: linear-gradient(180deg, rgba(38, 74, 10, .9), rgba(38, 74, 10, .72)); }
+  .hero::after { background: linear-gradient(180deg, rgba(38, 74, 10, .78), rgba(38, 74, 10, .45)); }
   .grades, .channels.three { grid-template-columns: minmax(0, 1fr); }
   .strip ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .strip li:nth-child(odd) { border-left: 0; padding-left: 0; }
