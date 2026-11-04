@@ -117,7 +117,17 @@
           syncType();
           showStatus(text.ok, "ok");
         })
-        .catch(function () { showStatus(text.fail, "error"); })
+        .catch(function () {
+          // The delivery service is unavailable: fall back to the visitor's email app so no inquiry is lost.
+          if (config.email) {
+            location.href = "mailto:" + config.email +
+              "?subject=" + encodeURIComponent(subject) +
+              "&body=" + encodeURIComponent(summary(data));
+            showStatus(text.mail);
+          } else {
+            showStatus(text.fail, "error");
+          }
+        })
         .finally(function () { submit.disabled = false; });
     } else if (config.email) {
       location.href = "mailto:" + config.email +
