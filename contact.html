@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sample Request &amp; Wholesale Inquiry | FJK Wellness</title>
+<meta name="description" content="Request a matcha sample or send a wholesale inquiry to FJK Wellness.">
+<link rel="alternate" hreflang="en" href="contact.html">
+<link rel="alternate" hreflang="ko" href="ko/contact.html">
+<link rel="alternate" hreflang="ja" href="ja/contact.html">
+<link rel="alternate" hreflang="es" href="es/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans+KR:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Zen+Old+Mincho:wght@500&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="masthead band"><div class="wrap">
+  <a class="wordmark" href="index.html"><b>FJK Wellness</b><small>Matcha Wholesale Specialists</small></a>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html#journal">Journal</a>
+    <a href="index.html#matcha">Our Matcha</a>
+    <a href="contact.html">Sample & Inquiry</a>
+    <span class="langs"><a class="lang current" href="contact.html" lang="en" aria-current=true>English</a><a class="lang" href="ko/contact.html" lang="ko">한국어</a><a class="lang" href="ja/contact.html" lang="ja">日本語</a><a class="lang" href="es/contact.html" lang="es">Español</a></span>
+  </nav>
+</div></header>
+<main>
+
+<section class="band article-head"><div class="wrap">
+  <h1>Request a sample or send an inquiry</h1>
+  <p style="margin:0;color:#d7dfd6;max-width:40em">Tell us about your business and your monthly usage. We share pricing and product details directly by email or phone.</p>
+</div></section>
+<section class="section"><div class="wrap contact-grid">
+  <aside class="contact-side"><div><h2>What happens next</h2><p>We review your request and contact you by email or phone with the next steps.</p></div><div><h2>Prefer to call or email?</h2><p>Call <a href="tel:+19496556830">(949) 655-6830</a> or email <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a>. Other languages are in the menu above.</p></div></aside>
+  <form class="inquiry" id="inquiry-form">
+    <fieldset class="full">
+      <legend>What do you need?</legend>
+      <div class="type-choice">
+        <label><input type="radio" id="t-sample" name="request_type" value="sample" checked>Sample request<small>Try the matcha first</small></label>
+        <label><input type="radio" id="t-inquiry" name="request_type" value="inquiry">Wholesale inquiry<small>Pricing, pack sizes and terms</small></label>
+      </div>
+    </fieldset>
+    <div class="policy"><div><b>Sample request</b>Free samples: shipping fees apply. Pickup is free.</div><div><b>Wholesale inquiry</b>Wholesale inquiries: the minimum order is 5 kg.</div></div>
+    <div class="field"><label for="f-business">Business name<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-business" name="business" data-label="Business name" autocomplete="organization" required></div>
+    <div class="field"><label for="f-contact">Contact name<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-contact" name="contact" data-label="Contact name" autocomplete="name" required></div>
+    <div class="field"><label for="f-email">Email<span class="req" aria-hidden="true"> *</span></label><input type="email" id="f-email" name="email" data-label="Email" autocomplete="email" required></div>
+    <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" data-label="Phone" autocomplete="tel"></div>
+    <div class="field"><label for="f-type">Business type<span class="req" aria-hidden="true"> *</span></label><select id="f-type" name="business_type" data-label="Business type" required><option value="">Select one</option><option>Café</option><option>Matcha bar</option><option>Bakery</option><option>Restaurant</option><option>Distributor</option><option>Other</option></select></div>
+    <div class="field"><label for="f-city">City and state<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-city" name="city_state" data-label="City and state" required></div>
+    <div class="field full" id="sample-address"><label for="f-address">Sample shipping address (if shipping)</label><input type="text" id="f-address" name="address" data-label="Sample shipping address (if shipping)" autocomplete="street-address"></div>
+    <div class="field full"><label for="f-grade">Grade of interest</label><select id="f-grade" name="grade" data-label="Grade of interest"><option value="">Select one</option><option>Highest ceremonial</option><option>Ceremonial</option><option>Latte grade</option><option>Not sure yet</option></select></div>
+    <div class="field"><label for="f-volume">Estimated monthly volume (kg)</label><input type="number" id="f-volume" name="monthly_volume_kg" data-label="Estimated monthly volume (kg)" min="0" step="0.1" inputmode="decimal"></div>
+    <div class="field"><label for="f-pack">Preferred pack size</label><input type="text" id="f-pack" name="pack_size" data-label="Preferred pack size" placeholder="For example, 100 g or 1 kg"></div>
+    <div class="field full"><label for="f-message">Message</label><textarea id="f-message" name="message" data-label="Message" placeholder="Current matcha, menu plans, timing, or anything else"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+    <div class="form-actions"><button class="btn btn-solid" type="submit">Send request</button><p class="form-note">We use your details only to respond to this request.</p></div>
+    <p class="form-status" id="form-status" role="status" hidden></p>
+  </form>
+</div></section>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+
+</main>
+<footer class="footer band"><div class="wrap">
+  <div><p><b>FJK Wellness</b></p><p>Sample requests and wholesale inquiries: <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a></p></div>
+  <div class="links"><a href="contact.html">Sample & Inquiry</a><a href="credits.html">Photo credits</a></div>
+</div></footer>
+</body>
+</html>

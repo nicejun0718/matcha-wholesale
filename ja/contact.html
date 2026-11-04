@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>サンプル請求・卸売のお問い合わせ | FJK Wellness</title>
+<meta name="description" content="FJK Wellnessへの抹茶サンプル請求と卸売のお問い合わせ。">
+<link rel="alternate" hreflang="en" href="../contact.html">
+<link rel="alternate" hreflang="ko" href="../ko/contact.html">
+<link rel="alternate" hreflang="ja" href="../ja/contact.html">
+<link rel="alternate" hreflang="es" href="../es/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans+KR:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Zen+Old+Mincho:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="masthead band"><div class="wrap">
+  <a class="wordmark" href="../ja/index.html"><b>FJK Wellness</b><small>抹茶卸売専門</small></a>
+  <nav class="nav" aria-label="Main">
+    <a href="../ja/index.html#journal">ジャーナル</a>
+    <a href="../ja/index.html#matcha">製品案内</a>
+    <a href="../ja/contact.html">サンプル・卸売のお問い合わせ</a>
+    <span class="langs"><a class="lang" href="../contact.html" lang="en">English</a><a class="lang" href="../ko/contact.html" lang="ko">한국어</a><a class="lang current" href="../ja/contact.html" lang="ja" aria-current=true>日本語</a><a class="lang" href="../es/contact.html" lang="es">Español</a></span>
+  </nav>
+</div></header>
+<main>
+
+<section class="band article-head"><div class="wrap">
+  <h1>サンプル請求・卸売のお問い合わせ</h1>
+  <p style="margin:0;color:#d7dfd6;max-width:40em">事業内容と月間ご使用量の目安をお知らせください。価格と製品の詳細は、メールまたはお電話で直接ご案内します。</p>
+</div></section>
+<section class="section"><div class="wrap contact-grid">
+  <aside class="contact-side"><div><h2>お問い合わせ後の流れ</h2><p>内容を確認のうえ、メールまたはお電話で次のステップをご案内します。</p></div><div><h2>お電話・メール</h2><p>お電話 <a href="tel:+19496556830">(949) 655-6830</a> またはメール <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a> でもお問い合わせいただけます。</p></div></aside>
+  <form class="inquiry" id="inquiry-form">
+    <fieldset class="full">
+      <legend>ご用件をお選びください</legend>
+      <div class="type-choice">
+        <label><input type="radio" id="t-sample" name="request_type" value="sample" checked>サンプル請求<small>まず抹茶を試す</small></label>
+        <label><input type="radio" id="t-inquiry" name="request_type" value="inquiry">卸売のお問い合わせ<small>価格、包装単位、取引条件</small></label>
+      </div>
+    </fieldset>
+    <div class="policy"><div><b>サンプル請求</b>無料サンプルのお申し込みには送料がかかります。店頭受け取りは無料です。</div><div><b>卸売のお問い合わせ</b>卸売のお問い合わせの最小注文量は5kgからです。</div></div>
+    <div class="field"><label for="f-business">事業者名<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-business" name="business" data-label="事業者名" autocomplete="organization" required></div>
+    <div class="field"><label for="f-contact">ご担当者名<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-contact" name="contact" data-label="ご担当者名" autocomplete="name" required></div>
+    <div class="field"><label for="f-email">メールアドレス<span class="req" aria-hidden="true"> *</span></label><input type="email" id="f-email" name="email" data-label="メールアドレス" autocomplete="email" required></div>
+    <div class="field"><label for="f-phone">電話番号</label><input type="tel" id="f-phone" name="phone" data-label="電話番号" autocomplete="tel"></div>
+    <div class="field"><label for="f-type">業種<span class="req" aria-hidden="true"> *</span></label><select id="f-type" name="business_type" data-label="業種" required><option value="">選択してください</option><option>カフェ</option><option>抹茶専門店</option><option>ベーカリー</option><option>レストラン</option><option>卸売・流通</option><option>その他</option></select></div>
+    <div class="field"><label for="f-city">市・州<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-city" name="city_state" data-label="市・州" required></div>
+    <div class="field full" id="sample-address"><label for="f-address">サンプルのお届け先（配送希望の場合）</label><input type="text" id="f-address" name="address" data-label="サンプルのお届け先（配送希望の場合）" autocomplete="street-address"></div>
+    <div class="field full"><label for="f-grade">ご希望のグレード</label><select id="f-grade" name="grade" data-label="ご希望のグレード"><option value="">選択してください</option><option>最高級セレモニアル</option><option>セレモニアル</option><option>ラテグレード</option><option>未定</option></select></div>
+    <div class="field"><label for="f-volume">月間ご使用量の目安 (kg)</label><input type="number" id="f-volume" name="monthly_volume_kg" data-label="月間ご使用量の目安 (kg)" min="0" step="0.1" inputmode="decimal"></div>
+    <div class="field"><label for="f-pack">ご希望の包装単位</label><input type="text" id="f-pack" name="pack_size" data-label="ご希望の包装単位" placeholder="例：100g、1kg"></div>
+    <div class="field full"><label for="f-message">お問い合わせ内容</label><textarea id="f-message" name="message" data-label="お問い合わせ内容" placeholder="現在お使いの抹茶、メニューの計画、ご希望の時期、サンプルの受け取り方法など"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+    <div class="form-actions"><button class="btn btn-solid" type="submit">送信する</button><p class="form-note">ご入力いただいた情報は、このお問い合わせへの回答にのみ使用します。</p></div>
+    <p class="form-status" id="form-status" role="status" hidden></p>
+  </form>
+</div></section>
+<script src="../assets/config.js"></script>
+<script src="../assets/site.js"></script>
+
+</main>
+<footer class="footer band"><div class="wrap">
+  <div><p><b>FJK Wellness</b></p><p>サンプル請求・卸売のお問い合わせ: <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a></p></div>
+  <div class="links"><a href="../ja/contact.html">サンプル・卸売のお問い合わせ</a><a href="../ja/credits.html">写真クレジット</a></div>
+</div></footer>
+</body>
+</html>

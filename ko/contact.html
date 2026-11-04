@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>샘플 요청 및 도매 문의 | FJK Wellness</title>
+<meta name="description" content="FJK Wellness에 말차 샘플을 요청하거나 도매 문의를 보내세요.">
+<link rel="alternate" hreflang="en" href="../contact.html">
+<link rel="alternate" hreflang="ko" href="../ko/contact.html">
+<link rel="alternate" hreflang="ja" href="../ja/contact.html">
+<link rel="alternate" hreflang="es" href="../es/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans+KR:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Zen+Old+Mincho:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="masthead band"><div class="wrap">
+  <a class="wordmark" href="../ko/index.html"><b>FJK Wellness</b><small>말차 도매 전문</small></a>
+  <nav class="nav" aria-label="Main">
+    <a href="../ko/index.html#journal">저널</a>
+    <a href="../ko/index.html#matcha">제품 안내</a>
+    <a href="../ko/contact.html">샘플·도매 문의</a>
+    <span class="langs"><a class="lang" href="../contact.html" lang="en">English</a><a class="lang current" href="../ko/contact.html" lang="ko" aria-current=true>한국어</a><a class="lang" href="../ja/contact.html" lang="ja">日本語</a><a class="lang" href="../es/contact.html" lang="es">Español</a></span>
+  </nav>
+</div></header>
+<main>
+
+<section class="band article-head"><div class="wrap">
+  <h1>샘플 요청·도매 문의</h1>
+  <p style="margin:0;color:#d7dfd6;max-width:40em">업체 정보와 월 예상 사용량을 알려 주세요. 가격과 제품 상세 정보는 이메일이나 전화로 직접 안내해 드립니다.</p>
+</div></section>
+<section class="section"><div class="wrap contact-grid">
+  <aside class="contact-side"><div><h2>접수 후 진행</h2><p>요청 내용을 확인한 뒤 이메일이나 전화로 다음 단계를 안내해 드립니다.</p></div><div><h2>전화·이메일 문의</h2><p>전화 <a href="tel:+19496556830">(949) 655-6830</a> 또는 이메일 <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a>으로도 문의하실 수 있습니다.</p></div></aside>
+  <form class="inquiry" id="inquiry-form">
+    <fieldset class="full">
+      <legend>어떤 내용으로 문의하시나요?</legend>
+      <div class="type-choice">
+        <label><input type="radio" id="t-sample" name="request_type" value="sample" checked>샘플 요청<small>먼저 말차를 테스트</small></label>
+        <label><input type="radio" id="t-inquiry" name="request_type" value="inquiry">도매 문의<small>가격, 포장 단위, 거래 조건</small></label>
+      </div>
+    </fieldset>
+    <div class="policy"><div><b>샘플 요청</b>무료 샘플 신청 시 배송료가 발생합니다. 픽업은 무료입니다.</div><div><b>도매 문의</b>도매 문의 시 최소 주문량은 5kg부터입니다.</div></div>
+    <div class="field"><label for="f-business">업체명<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-business" name="business" data-label="업체명" autocomplete="organization" required></div>
+    <div class="field"><label for="f-contact">담당자명<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-contact" name="contact" data-label="담당자명" autocomplete="name" required></div>
+    <div class="field"><label for="f-email">이메일<span class="req" aria-hidden="true"> *</span></label><input type="email" id="f-email" name="email" data-label="이메일" autocomplete="email" required></div>
+    <div class="field"><label for="f-phone">전화번호</label><input type="tel" id="f-phone" name="phone" data-label="전화번호" autocomplete="tel"></div>
+    <div class="field"><label for="f-type">업종<span class="req" aria-hidden="true"> *</span></label><select id="f-type" name="business_type" data-label="업종" required><option value="">선택해 주세요</option><option>카페</option><option>말차 전문점</option><option>베이커리</option><option>레스토랑</option><option>유통사</option><option>기타</option></select></div>
+    <div class="field"><label for="f-city">도시, 주<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-city" name="city_state" data-label="도시, 주" required></div>
+    <div class="field full" id="sample-address"><label for="f-address">샘플 받을 주소 (배송 요청 시)</label><input type="text" id="f-address" name="address" data-label="샘플 받을 주소 (배송 요청 시)" autocomplete="street-address"></div>
+    <div class="field full"><label for="f-grade">관심 등급</label><select id="f-grade" name="grade" data-label="관심 등급"><option value="">선택해 주세요</option><option>최상위 세레모니얼</option><option>세레모니얼</option><option>라떼 등급</option><option>아직 미정</option></select></div>
+    <div class="field"><label for="f-volume">월 예상 사용량 (kg)</label><input type="number" id="f-volume" name="monthly_volume_kg" data-label="월 예상 사용량 (kg)" min="0" step="0.1" inputmode="decimal"></div>
+    <div class="field"><label for="f-pack">희망 포장 단위</label><input type="text" id="f-pack" name="pack_size" data-label="희망 포장 단위" placeholder="예: 100g, 1kg"></div>
+    <div class="field full"><label for="f-message">문의 내용</label><textarea id="f-message" name="message" data-label="문의 내용" placeholder="현재 사용 중인 말차, 메뉴 계획, 희망 시기 등"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+    <div class="form-actions"><button class="btn btn-solid" type="submit">요청 보내기</button><p class="form-note">입력하신 정보는 이 요청에 답변하는 용도로만 사용합니다.</p></div>
+    <p class="form-status" id="form-status" role="status" hidden></p>
+  </form>
+</div></section>
+<script src="../assets/config.js"></script>
+<script src="../assets/site.js"></script>
+
+</main>
+<footer class="footer band"><div class="wrap">
+  <div><p><b>FJK Wellness</b></p><p>샘플 요청 및 도매 문의: <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a></p></div>
+  <div class="links"><a href="../ko/contact.html">샘플·도매 문의</a><a href="../ko/credits.html">사진 출처</a></div>
+</div></footer>
+</body>
+</html>

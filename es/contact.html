@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solicitud de muestra y consulta mayorista | FJK Wellness</title>
+<meta name="description" content="Solicite una muestra de matcha o envíe una consulta mayorista a FJK Wellness.">
+<link rel="alternate" hreflang="en" href="../contact.html">
+<link rel="alternate" hreflang="ko" href="../ko/contact.html">
+<link rel="alternate" hreflang="ja" href="../ja/contact.html">
+<link rel="alternate" hreflang="es" href="../es/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans+KR:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Zen+Old+Mincho:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="masthead band"><div class="wrap">
+  <a class="wordmark" href="../es/index.html"><b>FJK Wellness</b><small>Especialistas en matcha al por mayor</small></a>
+  <nav class="nav" aria-label="Main">
+    <a href="../es/index.html#journal">Diario</a>
+    <a href="../es/index.html#matcha">Nuestro matcha</a>
+    <a href="../es/contact.html">Muestras y consultas</a>
+    <span class="langs"><a class="lang" href="../contact.html" lang="en">English</a><a class="lang" href="../ko/contact.html" lang="ko">한국어</a><a class="lang" href="../ja/contact.html" lang="ja">日本語</a><a class="lang current" href="../es/contact.html" lang="es" aria-current=true>Español</a></span>
+  </nav>
+</div></header>
+<main>
+
+<section class="band article-head"><div class="wrap">
+  <h1>Solicite una muestra o envíe una consulta</h1>
+  <p style="margin:0;color:#d7dfd6;max-width:40em">Cuéntenos sobre su negocio y su consumo mensual. Compartimos los precios y los detalles del producto directamente por correo electrónico o teléfono.</p>
+</div></section>
+<section class="section"><div class="wrap contact-grid">
+  <aside class="contact-side"><div><h2>Qué ocurre después</h2><p>Revisamos su solicitud y le indicamos los siguientes pasos por correo electrónico o teléfono.</p></div><div><h2>¿Prefiere llamar o escribir?</h2><p>Llame al <a href="tel:+19496556830">(949) 655-6830</a> o escriba a <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a>.</p></div></aside>
+  <form class="inquiry" id="inquiry-form">
+    <fieldset class="full">
+      <legend>¿Qué necesita?</legend>
+      <div class="type-choice">
+        <label><input type="radio" id="t-sample" name="request_type" value="sample" checked>Solicitud de muestra<small>Pruebe primero el matcha</small></label>
+        <label><input type="radio" id="t-inquiry" name="request_type" value="inquiry">Consulta mayorista<small>Precios, formatos y condiciones</small></label>
+      </div>
+    </fieldset>
+    <div class="policy"><div><b>Solicitud de muestra</b>Muestras gratuitas: se cobran los gastos de envío. La recogida es gratuita.</div><div><b>Consulta mayorista</b>Consultas mayoristas: el pedido mínimo es de 5 kg.</div></div>
+    <div class="field"><label for="f-business">Nombre del negocio<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-business" name="business" data-label="Nombre del negocio" autocomplete="organization" required></div>
+    <div class="field"><label for="f-contact">Nombre de contacto<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-contact" name="contact" data-label="Nombre de contacto" autocomplete="name" required></div>
+    <div class="field"><label for="f-email">Correo electrónico<span class="req" aria-hidden="true"> *</span></label><input type="email" id="f-email" name="email" data-label="Correo electrónico" autocomplete="email" required></div>
+    <div class="field"><label for="f-phone">Teléfono</label><input type="tel" id="f-phone" name="phone" data-label="Teléfono" autocomplete="tel"></div>
+    <div class="field"><label for="f-type">Tipo de negocio<span class="req" aria-hidden="true"> *</span></label><select id="f-type" name="business_type" data-label="Tipo de negocio" required><option value="">Seleccione una opción</option><option>Cafetería</option><option>Bar de matcha</option><option>Panadería</option><option>Restaurante</option><option>Distribuidor</option><option>Otro</option></select></div>
+    <div class="field"><label for="f-city">Ciudad y estado<span class="req" aria-hidden="true"> *</span></label><input type="text" id="f-city" name="city_state" data-label="Ciudad y estado" required></div>
+    <div class="field full" id="sample-address"><label for="f-address">Dirección de envío de la muestra (si desea envío)</label><input type="text" id="f-address" name="address" data-label="Dirección de envío de la muestra (si desea envío)" autocomplete="street-address"></div>
+    <div class="field full"><label for="f-grade">Grado de interés</label><select id="f-grade" name="grade" data-label="Grado de interés"><option value="">Seleccione una opción</option><option>Ceremonial superior</option><option>Ceremonial</option><option>Grado para latte</option><option>Aún no lo sé</option></select></div>
+    <div class="field"><label for="f-volume">Volumen mensual estimado (kg)</label><input type="number" id="f-volume" name="monthly_volume_kg" data-label="Volumen mensual estimado (kg)" min="0" step="0.1" inputmode="decimal"></div>
+    <div class="field"><label for="f-pack">Formato preferido</label><input type="text" id="f-pack" name="pack_size" data-label="Formato preferido" placeholder="Por ejemplo, 100 g o 1 kg"></div>
+    <div class="field full"><label for="f-message">Mensaje</label><textarea id="f-message" name="message" data-label="Mensaje" placeholder="Matcha actual, planes de menú, fechas, recogida de la muestra u otros detalles"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+    <div class="form-actions"><button class="btn btn-solid" type="submit">Enviar solicitud</button><p class="form-note">Usamos sus datos solo para responder a esta solicitud.</p></div>
+    <p class="form-status" id="form-status" role="status" hidden></p>
+  </form>
+</div></section>
+<script src="../assets/config.js"></script>
+<script src="../assets/site.js"></script>
+
+</main>
+<footer class="footer band"><div class="wrap">
+  <div><p><b>FJK Wellness</b></p><p>Solicitudes de muestra y consultas mayoristas: <a href="mailto:contact@fjkwellness.com">contact@fjkwellness.com</a></p></div>
+  <div class="links"><a href="../es/contact.html">Muestras y consultas</a><a href="../es/credits.html">Créditos de las fotos</a></div>
+</div></footer>
+</body>
+</html>
