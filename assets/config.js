@@ -6,10 +6,11 @@
 
   While both are empty the form validates input but sends nothing, and tells the visitor so.
 */
+var ENDPOINT = "https://formsubmit.co/ajax/contact@fjkwellness.com";
 window.SITE_CONFIG = {
   // All inquiries go to FJK Wellness.
-  en: { endpoint: "", email: "contact@fjkwellness.com" },
-  ko: { endpoint: "", email: "contact@fjkwellness.com" },
-  ja: { endpoint: "", email: "contact@fjkwellness.com" },
-  es: { endpoint: "", email: "contact@fjkwellness.com" }
+  en: { endpoint: ENDPOINT, email: "contact@fjkwellness.com" },
+  ko: { endpoint: ENDPOINT, email: "contact@fjkwellness.com" },
+  ja: { endpoint: ENDPOINT, email: "contact@fjkwellness.com" },
+  es: { endpoint: ENDPOINT, email: "contact@fjkwellness.com" }
 };
