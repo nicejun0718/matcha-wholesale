@@ -13,23 +13,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans+KR:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Zen+Old+Mincho:wght@500&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="../assets/nav.js" defer></script>
 </head>
-<body>
-<header class="masthead band"><div class="wrap">
+<body class="home">
+<header class="masthead band" id="masthead"><div class="wrap">
   <a class="wordmark" href="../ja/index.html"><b>FJK Wellness</b><small>抹茶卸売専門</small></a>
   <nav class="nav" aria-label="Main">
     <a href="../ja/index.html#journal">ジャーナル</a>
     <a href="../ja/index.html#matcha">製品案内</a>
     <a href="../ja/contact.html">サンプル・卸売のお問い合わせ</a>
-    <span class="langs"><a class="lang" href="../index.html" lang="en">English</a><a class="lang" href="../ko/index.html" lang="ko">한국어</a><a class="lang current" href="../ja/index.html" lang="ja" aria-current=true>日本語</a><a class="lang" href="../es/index.html" lang="es">Español</a></span>
   </nav>
+  <details class="lang-menu"><summary>日本語</summary><div class="lang-list"><a href="../index.html" lang="en">English</a><a href="../ko/index.html" lang="ko">한국어</a><a href="../ja/index.html" lang="ja" aria-current=true>日本語</a><a href="../es/index.html" lang="es">Español</a></div></details>
 </div></header>
 <main>
 
-<section class="hero">
+<section class="hero" id="hero">
   <video autoplay muted loop playsinline preload="metadata" poster="../assets/img/field.jpg" aria-hidden="true"><source src="../assets/video/hero.mp4" type="video/mp4"></video>
+  <div class="hero-lang"><details class="lang-menu"><summary>日本語</summary><div class="lang-list"><a href="../index.html" lang="en">English</a><a href="../ko/index.html" lang="ko">한국어</a><a href="../ja/index.html" lang="ja" aria-current=true>日本語</a><a href="../es/index.html" lang="es">Español</a></div></details></div>
   <div class="wrap hero-text">
-    <p class="origin">抹茶専門</p>
+    <p class="origin">FJK Wellness · 抹茶専門</p>
     <h1>日本産抹茶の卸売</h1>
     <p class="lede">私たちは抹茶だけを専門に扱います。最高級セレモニアルからラテグレードまで全グレードを、日本の3つの農園との契約により安定して供給します。</p>
     <div class="actions">
@@ -37,8 +40,9 @@
       <a class="btn btn-ghost" href="contact.html?type=inquiry">卸売価格のお問い合わせ</a>
     </div>
   </div>
+  <a class="hero-cue" href="#next" aria-label="目的から選ぶ"><span aria-hidden="true">↓</span></a>
 </section>
-<section class="want"><div class="wrap"><p>目的から選ぶ</p><nav aria-label="目的から選ぶ"><a href="contact.html?type=sample">サンプルを請求</a><a href="contact.html?type=inquiry">卸売価格のお問い合わせ</a><a href="#grades">抹茶グレードを比較</a><a href="journal/how-matcha-is-made.html">製法を知る</a></nav></div></section>
+<section class="want" id="next"><div class="wrap"><p>目的から選ぶ</p><nav aria-label="目的から選ぶ"><a href="contact.html?type=sample">サンプルを請求</a><a href="contact.html?type=inquiry">卸売価格のお問い合わせ</a><a href="#grades">抹茶グレードを比較</a><a href="journal/how-matcha-is-made.html">製法を知る</a></nav></div></section>
 <section class="section"><div class="wrap">
   <div class="section-head"><p class="eyebrow">FJK Wellnessが選ばれる理由</p><h2>抹茶ひとつに集中しています</h2></div>
   <div class="channels three"><div><h3>抹茶専門</h3><p>ほかの製品は扱わず抹茶だけを扱うため、ご相談も供給も抹茶に集中しています。</p></div><div><h3>日本の3農園と契約</h3><p>日本の3つの農園と契約しているため、ご注文を安定してお届けできます。</p></div><div><h3>全グレードを1社から</h3><p>そのまま味わうセレモニアルからラテ用の抹茶まで、1社の取引先からご購入いただけます。</p></div></div>

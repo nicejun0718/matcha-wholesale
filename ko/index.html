@@ -13,23 +13,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans+KR:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Zen+Old+Mincho:wght@500&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="../assets/nav.js" defer></script>
 </head>
-<body>
-<header class="masthead band"><div class="wrap">
+<body class="home">
+<header class="masthead band" id="masthead"><div class="wrap">
   <a class="wordmark" href="../ko/index.html"><b>FJK Wellness</b><small>말차 도매 전문</small></a>
   <nav class="nav" aria-label="Main">
     <a href="../ko/index.html#journal">저널</a>
     <a href="../ko/index.html#matcha">제품 안내</a>
     <a href="../ko/contact.html">샘플·도매 문의</a>
-    <span class="langs"><a class="lang" href="../index.html" lang="en">English</a><a class="lang current" href="../ko/index.html" lang="ko" aria-current=true>한국어</a><a class="lang" href="../ja/index.html" lang="ja">日本語</a><a class="lang" href="../es/index.html" lang="es">Español</a></span>
   </nav>
+  <details class="lang-menu"><summary>한국어</summary><div class="lang-list"><a href="../index.html" lang="en">English</a><a href="../ko/index.html" lang="ko" aria-current=true>한국어</a><a href="../ja/index.html" lang="ja">日本語</a><a href="../es/index.html" lang="es">Español</a></div></details>
 </div></header>
 <main>
 
-<section class="hero">
+<section class="hero" id="hero">
   <video autoplay muted loop playsinline preload="metadata" poster="../assets/img/field.jpg" aria-hidden="true"><source src="../assets/video/hero.mp4" type="video/mp4"></video>
+  <div class="hero-lang"><details class="lang-menu"><summary>한국어</summary><div class="lang-list"><a href="../index.html" lang="en">English</a><a href="../ko/index.html" lang="ko" aria-current=true>한국어</a><a href="../ja/index.html" lang="ja">日本語</a><a href="../es/index.html" lang="es">Español</a></div></details></div>
   <div class="wrap hero-text">
-    <p class="origin">말차 전문</p>
+    <p class="origin">FJK Wellness · 말차 전문</p>
     <h1>일본 말차 대량 도매</h1>
     <p class="lede">저희는 말차만 전문으로 다룹니다. 최상위 세레모니얼부터 라떼 등급까지 모든 등급을, 일본 농장 세 곳과의 계약으로 안정적으로 공급합니다.</p>
     <div class="actions">
@@ -37,8 +40,9 @@
       <a class="btn btn-ghost" href="contact.html?type=inquiry">도매 가격 문의</a>
     </div>
   </div>
+  <a class="hero-cue" href="#next" aria-label="이런 분들은 여기로"><span aria-hidden="true">↓</span></a>
 </section>
-<section class="want"><div class="wrap"><p>이런 분들은 여기로</p><nav aria-label="이런 분들은 여기로"><a href="contact.html?type=sample">샘플 요청하기</a><a href="contact.html?type=inquiry">도매 가격 문의</a><a href="#grades">말차 등급 비교</a><a href="journal/how-matcha-is-made.html">제조 과정 알아보기</a></nav></div></section>
+<section class="want" id="next"><div class="wrap"><p>이런 분들은 여기로</p><nav aria-label="이런 분들은 여기로"><a href="contact.html?type=sample">샘플 요청하기</a><a href="contact.html?type=inquiry">도매 가격 문의</a><a href="#grades">말차 등급 비교</a><a href="journal/how-matcha-is-made.html">제조 과정 알아보기</a></nav></div></section>
 <section class="section"><div class="wrap">
   <div class="section-head"><p class="eyebrow">FJK Wellness를 선택하는 이유</p><h2>말차 하나에만 집중합니다</h2></div>
   <div class="channels three"><div><h3>말차 전문</h3><p>다른 제품 없이 말차만 취급하기 때문에, 상담도 공급도 말차에만 집중합니다.</p></div><div><h3>일본 농장 세 곳과 계약</h3><p>일본 농장 세 곳과 계약되어 있어 주문 물량을 안정적으로 공급할 수 있습니다.</p></div><div><h3>한 곳에서 모든 등급을</h3><p>스트레이트용 세레모니얼부터 라떼용 말차까지 한 거래처에서 구매할 수 있습니다.</p></div></div>
