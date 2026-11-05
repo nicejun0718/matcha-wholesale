@@ -104,15 +104,9 @@
       });
       payload.append("_replyto", data.get("email"));
       payload.append("_subject", subject);
-      payload.append("_template", "table");
-      payload.append("_captcha", "false");
       fetch(config.endpoint, { method: "POST", body: payload, headers: { Accept: "application/json" } })
         .then(function (res) {
           if (!res.ok) throw new Error("HTTP " + res.status);
-          return res.json();
-        })
-        .then(function (result) {
-          if (String(result.success) !== "true") throw new Error(result.message || "Not sent");
           form.reset();
           syncType();
           showStatus(text.ok, "ok");
